@@ -5,5 +5,6 @@ COPY . /app
 
 RUN apt-get update -y && \
     apt-get install python -y && \
-    apt-get install gym && \
-    apt-get install tensorflow
+    apt-get install --upgrade python-pip -y && \
+    pip install gym && \
+    pip install tensorflow 
